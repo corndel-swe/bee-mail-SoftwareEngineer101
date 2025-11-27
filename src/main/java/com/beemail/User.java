@@ -11,9 +11,14 @@ public class User {
 
 
 
-    public static List <String> addUser() {
+    public static List <String> addUser(User user) {
 
+        return List.of();
     };
 
-    public static receiveMessage() {};
+    public static String  receiveMessage() {
+
+
+
+    };
 }
