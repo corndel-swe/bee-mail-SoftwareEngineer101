@@ -4,6 +4,13 @@ public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        App app = App.getInstance();
+
+        User sender = new User("123", "Tania");
+        sender.addUser(app);
+
+        User recipient  = new User("456", "Charlie");
+        recipient.addUser(app);
+
     }
 }

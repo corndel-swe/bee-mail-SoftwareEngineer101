@@ -9,16 +9,17 @@ public class User {
     private List<Message> inbox = new ArrayList<>();
     private App app;
 
+    public User(String id, String username) {
+        this.id = id;
+        this.username = username;
+    }
+
+    public void addUser(App app) {
+        app.addUser(this);
+    }
 
 
-    public static List <String> addUser(User user) {
-
-        return List.of();
-    };
-
-    public static String  receiveMessage() {
-
-
-
-    };
+    public void setApp(App app) {
+        this.app = app;
+    }
 }
